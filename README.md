@@ -9,11 +9,11 @@
 * nitrogen
 
 ## 使用字形
-//* Iosevka Nerd Font
-//* feather
-//* siji
+<!--* Iosevka Nerd Font
+* feather
+* siji-->
 * JetBrains fonts
-//* Taipei Sans TC Beta
+<!--* Taipei Sans TC Beta-->
 
 ## 使用icon
 * papirus
