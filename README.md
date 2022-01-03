@@ -22,10 +22,11 @@
 * Arc
 
 ## 圖片
-* ~[](Image/Wallpaper.jpg)
+* ![](Image/Wallpaper.jpg)
 
-## 螢幕鎖定使用
+<!-- ## 螢幕鎖定使用
 * i3lock-color + [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
+-->
 
 # 預覽
 * ![](image.png)
