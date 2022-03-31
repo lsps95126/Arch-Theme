@@ -27,6 +27,7 @@ declare -A SINK_NICKNAMES
 #SINK_NICKNAMES["alsa_output.usb-SomeManufacturer_SomeUsbSoundcard-00.analog-stereo"]="External Soundcard"
 SINK_NICKNAMES["alsa_output.pci-0000_00_1b.0.analog-stereo"]=""
 SINK_NICKNAMES["alsa_output.pci-0000_00_03.0.hdmi-stereo"]=""
+SINK_NICKNAMES["bluez_sink.14_60_CB_E8_56_A2.a2dp_sink"]=""
 
 # Environment & global constants for the script
 LANGUAGE=en_US  # Some calls depend on English outputs of pactl

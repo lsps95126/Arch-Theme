@@ -210,8 +210,12 @@ exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 bindsym $mod+F12 workspace number $ws10 exec --no-startup-id  xtrlock
 
 
+#auto scrip on start up
+exec --no-startup-id "~/.config/i3/screen.sh"
+
+
 #auto open on startup
-assign [class="Telegram"] 9
+assign [class="Telegram"] 10
 exec --no-startup-id telegram-desktop
 
 for_window [class="Spotify"] move --no-auto-back-and-forth to workspace $ws10
