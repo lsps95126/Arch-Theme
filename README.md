@@ -6,14 +6,15 @@
 * rofi
 * [picom-ibhagwan-git](https://github.com/ibhagwan/picom)
 * pulseaudio
-* nitrogen
+* feh
+* i3lock-color+betterlockscreen
 
 ## 使用字形
-<!--* Iosevka Nerd Font
+* Iosevka Nerd Font
 * feather
-* siji-->
+* siji
 * JetBrains fonts
-<!--* Taipei Sans TC Beta-->
+* Taipei Sans TC Beta
 
 ## 使用icon
 * papirus
@@ -24,9 +25,6 @@
 ## 桌布
 * ![](Image/Wallpaper.jpg)
 
-<!-- ## 螢幕鎖定使用
-* i3lock-color + [betterlockscreen](https://github.com/betterlockscreen/betterlockscreen)
--->
 
 # 預覽
 * ![](image.png)

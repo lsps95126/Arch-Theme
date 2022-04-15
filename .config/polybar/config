@@ -84,7 +84,7 @@ font-5 = Iosevka Nerd Font:size=14;2
 font-6 = Iosevka Nerd Font:size=11;2
 
 modules-left = i3 sep ;xwindow
-modules-center = date 
+modules-center = date
 modules-right = network-speed sep volume-pulseaudio sep
 
 tray-position = right

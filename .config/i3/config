@@ -28,7 +28,7 @@ exec --no-startup-id dex --autostart --environment i3
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --nofork
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
@@ -53,6 +53,7 @@ bindsym $mod+Shift+q kill
 # start dmenu (a program launcher)
 #bindsym $mod+d exec --no-startup-id dmenu_run
 bindsym $mod+space exec --no-startup-id rofi -show run -theme ./Themes/spotlight-dark
+bindsym $mod+Tab exec --no-startup-id rofi -show window -theme ./Themes/spotlight-dark
 #bindsym $mod+space exec --no-startup-id rofi -modi "Global Search":"~/.config/rofi/rofi-spotlight/rofi-spotlight.sh" -show "Global Search" -config ~/.config/rofi/rofi-spotlight/rofi.rasi
 # A more modern dmenu replacement is rofi:
 # bindcode $mod+40 exec "rofi -modi drun,run -show drun"
@@ -198,16 +199,24 @@ focus_follows_mouse no
 exec_always --no-startup-id ~/.config/polybar/polybar.sh
 
 #nitrogen
-exec_always --no-startup-id nitrogen --restore
+#exec_always --no-startup-id nitrogen --restore
 # xwinwrap
 #exec_always --no-startup-id xwinwrap -g 1920x1080 -ov -ni -s -nf -- gifview -w WID /home/lsps1719/.Wallpaper/jeff.gif -a
+#feh
+#exec_always --no-startup-id sh ~/.fehbg
+
 
 #picom
 exec_always --no-startup-id picom --config ~/.config/picom/picom.conf
 
 #lock
 #bindsym $mod+F12 workspace number $ws10 exec i3lock-fancy
-bindsym $mod+F12 workspace number $ws10 exec --no-startup-id  xtrlock
+#bindsym $mod+F12 workspace number $ws10 exec --no-startup-id  xtrlock
+exec --no-startup-id betterlockscreen -w dim
+exec --no-startup-id source ~/.fehbg
+bindsym $mod+F12 exec betterlockscreen -l blur
+#auto lock
+exec --no-startup-id xautolock -time 10 -locker "betterlockscreen -l blur"
 
 
 #auto scrip on start up
@@ -257,4 +266,3 @@ client.focused_inactive     "#3287db00" "#080808c0" "#ffffff" "#3287db00" "#3287
 client.urgent               "#FF4133c0" "#FF4133c0" "#ffffff" "#F1CF55c0" "#52AEFFa0"
 client.placeholder          "#00000000" "#0c0c0c00" "#ffffff" "#00000000" "#0c0c0c00"
 client.background           "#FFFFFF00"
-
